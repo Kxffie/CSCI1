@@ -20,5 +20,5 @@ int main() {
 	age = 34;
 	cout << halfMyAge << endl;
 
-	std::string
+	std::string;
 }
