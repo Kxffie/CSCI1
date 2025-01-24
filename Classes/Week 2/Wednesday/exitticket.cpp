@@ -2,7 +2,6 @@
 // Created by bryce on 1/22/2025.
 //
 
-#include "exitticket.h"
 #include <iostream>
 using namespace std;
 
