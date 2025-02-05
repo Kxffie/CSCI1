@@ -2,6 +2,20 @@
 // Created by bryce on 2/5/2025.
 //
 
+/*
+What grade did you earn in Programming I ?
+A
+an A - excellent work !
+
+What grade did you earn in Programming I ?
+F
+you failed - better luck next time
+
+What grade did you earn in Programming I ?
+D
+while D is passing, there is a problem
+ */
+
 #include "lab4_4_switch.h"
 #include <iostream>
 using namespace std;

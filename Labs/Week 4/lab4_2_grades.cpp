@@ -2,6 +2,20 @@
 // Created by bryce on 2/5/2025.
 //
 
+/*
+Input your average:
+100
+You Pass
+
+Input your average:
+50
+You Fail
+
+Input your average:
+60
+You Pass
+*/
+
 #include "lab4_2_grades.h"
 #include <iostream>
 using namespace std;
@@ -49,8 +63,8 @@ void exercise3() {
 }
 
 int main() {
-	// original();
-	// exercise2();
+	original();
+	exercise2();
 	exercise3();
 	return 0;
 }

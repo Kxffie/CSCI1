@@ -2,6 +2,34 @@
 // Created by bryce on 2/5/2025.
 //
 
+/*
+Please enter an integer
+10
+num1 = 10 and num2 = 5
+The values are not the same
+Please enter an integer
+10
+Please enter another integer
+10
+num1 = 10 and num2 = 10
+Hey, that's a coincidence!
+Please enter an integer
+10
+Please enter another integer
+10
+num1 = 10 and num2 = 10
+The values are the same.
+Hey, that's a coincidence!
+Please enter an integer
+10
+Please enter another integer
+5
+num1 = 10 and num2 = 5
+The values are not the same
+
+Process finished with exit code 0
+*/
+
 #include "lab4_1_initialize.h"
 #include <iostream>
 using namespace std;

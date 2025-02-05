@@ -2,6 +2,16 @@
 // Created by bryce on 2/5/2025.
 //
 
+/*
+Please input your water bill for quarter 1:100
+ Please input your water bill for quarter 2:100
+ Please input your water bill for
+ quarter 3:10000
+ Please input your water bill for quarter 4:100
+ Your average monthly bill is $2575. You are using excessive amou
+nts of water
+ */
+
 #include "lab4_5_waterbill.h"
 #include <iostream>
 using namespace std;
