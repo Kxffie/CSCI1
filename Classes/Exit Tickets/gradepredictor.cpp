@@ -6,31 +6,40 @@
 #include <iostream>
 using namespace std;
 
-char calcGrade(const double examGrade, const double labGrade, const double classGrade, const double RQGrade) {
-	if (const double totalGrade = examGrade * 0.5 + labGrade * 0.4 + classGrade * 0.05 + RQGrade * 0.05; totalGrade >= 90)
-		return 'A';
-	else if (totalGrade >= 80)
-		return 'B';
-	else if (totalGrade >= 70)
-		return 'C';
-	else if (totalGrade >= 60)
-		return 'D';
-	else
-		return 'F';
+char calcGrade(double examGrade, double labGrade, double classGrade, double RQGrade) {
+	double totalGrade = examGrade * 0.5 + labGrade * 0.4 + classGrade * 0.05 + RQGrade * 0.05;
+	int bucket = static_cast<int>(totalGrade) / 10;
+	switch (bucket) {
+		case 10:
+		case 9:
+			return 'A';
+		case 8:
+			return 'B';
+		case 7:
+			return 'C';
+		case 6:
+			return 'D';
+		default:
+			return 'F';
+	}
 }
 
 int main() {
+	double examGrade, labGrade, classGrade, RQGrade;
 	// constexpr double examGrade = 90;
 	// constexpr double labGrade = 80;
 	// constexpr double classGrade = 70;
 	// constexpr double RQGrade = 60;
-	double examGrade, labGrade, classGrade, RQGrade;
+
 	cout << "Enter your exam grade: ";
 	cin >> examGrade;
+
 	cout << "Enter your lab grade: ";
 	cin >> labGrade;
+
 	cout << "Enter your class grade: ";
 	cin >> classGrade;
+
 	cout << "Enter your RQ grade: ";
 	cin >> RQGrade;
 
