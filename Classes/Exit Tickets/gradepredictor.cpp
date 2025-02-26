@@ -6,10 +6,9 @@
 #include <iostream>
 using namespace std;
 
-char calcGrade(double examGrade, double labGrade, double classGrade, double RQGrade) {
-	double totalGrade = examGrade * 0.5 + labGrade * 0.4 + classGrade * 0.05 + RQGrade * 0.05;
-	int bucket = static_cast<int>(totalGrade) / 10;
-	switch (bucket) {
+char calcGrade(const double examGrade, const double labGrade, const double classGrade, const double RQGrade) {
+	const double totalGrade = examGrade * 0.5 + labGrade * 0.4 + classGrade * 0.05 + RQGrade * 0.05;
+	switch (int total = static_cast<int>(totalGrade) / 10) {
 		case 10:
 		case 9:
 			return 'A';
