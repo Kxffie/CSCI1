@@ -27,5 +27,6 @@ int main() {
         cout << "Play again? (Y/N): ";
         cin >> playAgain;
     } while (tolower(playAgain) == 'y');
+
     return 0;
 }
