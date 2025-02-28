@@ -2,55 +2,6 @@
 // Created by bryce on 2/24/2025.
 //
 
-/*
-Write a C++ program that creates a function called displaySum.  The displaySum function should take in two doubles as parameters and should cout the sum of those two parameters.
-Test the function in the main program.
-Item
-Step 2 User inputStep 2 User input
-Write another function in your program called getDouble() that prompts the user to enter a double and then collects that double from the user and returns it.
-Item
-Step 3: display ProductStep 3: display Product
-Create a new function that takes in two doubles as parameters and displays their product to the user through cout.
-Item
-Step 4: display differenceStep 4: display difference
-Create a new function called displayDifference that takes in two doubles as parameters and then returns the difference between the two.
-Item
-Step 5: ExecuteAdditionStep 5: ExecuteAddition
-Create a new function called executeAddition that takes no parameter and returns no value.  This function should call the getNumber function to collect two doubles, and then the displaySum function to display the sum of those two numbers.
-Item
-Step 6: ExecuteSubtractionStep 6: ExecuteSubtraction
-Create a new function called executeSubtraction that takes no parameter and returns no value.  This function should call the getNumber function to collect two doubles, and then the getDifference function to display the difference of those two numbers.
-Item
-Step 7: ExecuteMultiplicationStep 7: ExecuteMultiplication
-Create a new function called executeMultiplication that takes no parameter and returns no value.  This function should call the getNumber function to collect two doubles, and then the getProduct function to display the product of those two numbers.
-Item
-Step 8: MenuStep 8: Menu
-Create a new function called displayMenu() that displays three menu choices to the user: A. Find the sum, B. Find the difference, C. Find the product.
-Item
-Step 9: displayErrorStep 9: displayError
-Create another function called displayError, that takes in a string called message, and displays to the console, "Error!  " followed by whatever is in the message variable.
-Item
-Step 10: Collect User ChoiceStep 10: Collect User Choice
-Write a function called getChoice that collects a user's choice A, B, or C.  Make sure you validate the input.  Use the displayError(string message) function to display an error.  Return the user's choice.
-Sample outputs:
-Please choose (A, B, or C):
-F
-Error! Invalid Choice!
-Please choose (A, B, or C):
-C
-
-Item
-Step 11: displayOptionStep 11: displayOption
-Write another function called displayOption that takes in a character, and calls the appropriate function based on that character.  Use a switch statement.  A would be sum, B would be difference, and C would be product the default option should call the displayError(string message) function with an appropriate error message.  Depending on the user choice, run the execute option related to that choice.
-
-Item
-Step 12: Some Assembly RequiredStep 12: Some Assembly Required
-Put the functions you have defined together into the main function, to ask the user for a choice, and for each choice, call the appropriate functions to do what the user asks.
-
-Make sure to check the answer as lowercase
-
- */
-
 #include "displaySumOpener.h"
 #include <iostream>
 using namespace std;
