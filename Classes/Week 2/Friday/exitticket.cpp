@@ -51,7 +51,7 @@ int main() {
 		cout << taxNames[i] << " Sales Tax (" << taxRates[i] * 100 << "%): " << taxAmount << endl;
 		totalTax += taxAmount;
 	}
-0
+
 	float total = subtotal + totalTax;
 	cout << "Total: " << total << endl;
 	for (int tip : {15, 20, 25})
