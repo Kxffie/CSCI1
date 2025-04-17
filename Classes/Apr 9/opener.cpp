@@ -7,36 +7,35 @@
 using namespace std;
 
 bool isVowel(char c) {
-	return (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u' ||
-			c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U');
+    return (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u');
 }
 
 char* stringStart(char* word) {
-	int count = 0;
-	while (word[count] != '\0' && !isVowel(word[count])) {
-		count++;
-	}
+    int count = 0;
+    while (word[count] != '\0' && !isVowel(word[count])) {
+        count++;
+    }
 
-	char* result = new char[count + 1];
+    char* result = new char[count + 1];
 
-	for (int i = 0; i < count; i++) {
-		result[i] = word[i];
-	}
-	result[count] = '\0';
+    for (int i = 0; i < count; i++) {
+        result[i] = word[i];
+    }
+    result[count] = '\0';
 
-	return result;
+    return result;
 }
 
 int main() {
-	char input[100];
-	cout << "Enter a word: ";
-	cin >> input;
+    char input[100];
+    cout << "Enter a word: ";
+    cin >> input;
 
-	char* lettersBeforeVowel = stringStart(input);
-	cout << "Characters before the first vowel: " << lettersBeforeVowel << endl;
+    char* lettersBeforeVowel = stringStart(input);
+    cout << "Characters before the first vowel: " << lettersBeforeVowel << endl;
 
-	delete [] lettersBeforeVowel;
-	lettersBeforeVowel = nullptr;
+    delete [] lettersBeforeVowel;
+    lettersBeforeVowel = nullptr;
 
-	return 0;
+    return 0;
 }
