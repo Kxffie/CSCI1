@@ -62,7 +62,8 @@ int main() {
     int w2 = 14;
     int w3 = 10;
     int w4 = GAME_NUM * 4;
-    int w5 = 16;
+    string totalPts = "Total Points";
+    int w5 = totalPts.length();
     string avgH = "Average/Game";
     int w6 = avgH.length();
     string sep = "  ";
@@ -131,18 +132,19 @@ int main() {
 
 
 /*
-C:\Users\bryce\CLionProjects\CSCI1\Exam2_Riordan.exe
-TEAM RANKING REPORT
+C:\Users\bryce\CLionProjects\CSCI1\Exam2.exe
+                                 TEAM RANKING REPORT
 
-RANKING     Team Name       Team #           Points           Total Points    Average/Game
---------  --------------  ----------  --------------------  ----------------  ------------
-1         Red Birds           5        41  37  35  33  35         181             36.2
-2         Nets                1        25  36  24  31  42         158             31.6
-3         Mavs                2        19  14  25  32  41         131             26.2
-4         Blue Jays           3        31  22  12  30  28         123             24.6
-5         Select              4        11  21  22  25  34         113             22.6
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-Totals                                                            706
+RANKING     Team Name       Team #           Points         Total Points  Average/Game
+--------  --------------  ----------  --------------------  ------------  ------------
+1         Red Birds           5        41  37  35  33  35       181           36.2
+2         Nets                1        25  36  24  31  42       158           31.6
+3         Mavs                2        19  14  25  32  41       131           26.2
+4         Blue Jays           3        31  22  12  30  28       123           24.6
+5         Select              4        11  21  22  25  34       113           22.6
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Totals                                                          706
 
 Process finished with exit code 0
+
 */
