@@ -13,12 +13,10 @@ using namespace std;
 const int TEAM_SIZE = 5;
 const int GAME_NUM  = 5;
 
-// repeat a character n times
 string repeat(char c, int n) {
     return string(n, c);
 }
 
-// center a string inside a field of width w
 string centerText(const string& s, int w) {
     int len = s.length();
     if (len >= w) return s;
@@ -40,7 +38,6 @@ int main() {
     Team teamInfo[TEAM_SIZE];
     int overallTotal = 0;
 
-    // read data
     ifstream in("teamPoints.txt");
     for (int i = 0; i < TEAM_SIZE; ++i) {
         in >> teamInfo[i].teamNum;
@@ -56,18 +53,16 @@ int main() {
     }
     in.close();
 
-    // sort by descending average
     sort(teamInfo, teamInfo + TEAM_SIZE,
          [](auto& a, auto& b) { return a.teamAvg > b.teamAvg; });
     for (int i = 0; i < TEAM_SIZE; ++i)
         teamInfo[i].rankNum = i + 1;
 
-    // column widths
-    int w1 = 8;   // RANKING
-    int w2 = 14;  // Team Name
-    int w3 = 10;  // Team #
-    int w4 = GAME_NUM * 4; // five scores, each width=4
-    int w5 = 16;  // Total Points
+    int w1 = 8;
+    int w2 = 14;
+    int w3 = 10;
+    int w4 = GAME_NUM * 4;
+    int w5 = 16;
     string avgH = "Average/Game";
     int w6 = avgH.length();
     string sep = "  ";
@@ -96,9 +91,7 @@ int main() {
       << repeat('-', w6)
       << "\n";
 
-    // each team row
     for (int i = 0; i < TEAM_SIZE; ++i) {
-        // format average to one decimal
         ostringstream os;
         os << fixed << setprecision(1) << teamInfo[i].teamAvg;
         string avgS = os.str();
@@ -108,7 +101,6 @@ int main() {
              << setw(w2) << teamInfo[i].teamName  << sep
              << centerText(to_string(teamInfo[i].teamNum), w3) << sep;
 
-        // five game scores
         for (int j = 0; j < GAME_NUM; ++j)
             cout << centerText(to_string(teamInfo[i].score[j]), 4);
 
@@ -126,7 +118,6 @@ int main() {
         cout << dashLine << "\n";
     }
 
-    // Totals line
     cout << left
          << setw(w1) << "Totals" << sep
          << setw(w2) << ""       << sep
